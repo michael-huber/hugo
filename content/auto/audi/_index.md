@@ -1,7 +1,8 @@
 ---
-title: "TEST"
+title: TEST
 herosmall: "/images/hero/vw/vw-s.jpg"
-heromedium: ""
-herolarge: ""
+heromedium: ''
+herolarge: ''
+
 ---
 TEST
