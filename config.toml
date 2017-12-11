@@ -1,0 +1,4 @@
+baseURL = "http://wwww.autoscout24.de/"
+languageCode = "de-DE"
+title = "My New Hugo Site"
+theme = "ananake"

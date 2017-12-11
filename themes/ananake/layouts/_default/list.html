@@ -1,0 +1,35 @@
+<ol class="breadcrumb">
+  {{ template "breadcrumb" dict "currentPage" .Page "id" .UniqueID }}
+</ol>
+
+<!-- templates -->
+{{ define "breadcrumb" }}
+  {{ if .currentPage.Parent }}
+    {{ template "breadcrumb" dict "currentPage" .currentPage.Parent }}
+  {{ end }}
+  <li>
+    {{ if eq .id .currentPage.UniqueID }}
+      {{ .currentPage.Title }}
+    {{ else }}
+      <a href="{{ .currentPage.URL }}">{{ .currentPage.Title }}</a>
+    {{ end }}
+  </li>
+{{ end }}
+{{ $folder := "static/images/hero/vw/" }}
+{{ $imgpath := "/images/hero/vw" }}
+{{ $files := readDir $folder }}
+
+<div>
+  {{ range $files }}
+
+  {{ end }}
+
+  <div class="posticon">
+    {{ if (not (isset .Params "herosmall")) | or (eq .Params.herosmall "") }}
+      <img src="/icons/default.png" />
+    {{ else }}
+      <img src="{{.Params.herosmall }}" />
+    {{ end }}
+  </div>
+
+</div>
