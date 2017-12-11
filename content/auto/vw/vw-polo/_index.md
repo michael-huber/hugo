@@ -1,7 +1,8 @@
 ---
-title: "VW Polo"
+title: VW Polo
 herosmall: "/images/hero/vw/vw-s.jpg"
-heromedium: ""
-herolarge: ""
+heromedium: ''
+herolarge: ''
+
 ---
 TEST
